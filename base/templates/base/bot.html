@@ -1,0 +1,17 @@
+{% extends 'base/layout.html' %}
+{% load static %}
+{% block title %}
+    Bot
+{% endblock %}
+
+{% block body  %}
+      <div class="bot">
+       <img class="bot-logo" src="{% static 'base/pic/3.png' %}" alt="logo">
+          <h1 class="title-bot">SHARAGA'S BOT</h1>
+          <p>Click the button to invite to your server</p>
+          <a href="https://discord.com/oauth2/authorize?client_id=1231509100609671238&scope=applications.commands%20bot&permissions=8">
+              <button class="btn btn-warning">Invite</button>
+          </a>
+    </div>
+    <div class="roadmap"></div>
+{% endblock %}

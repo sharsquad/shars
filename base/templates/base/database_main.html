@@ -1,0 +1,20 @@
+{% extends 'base/layout.html' %}
+
+{% block title %}
+    Database
+{% endblock %}
+
+{% block body  %}
+    <div class="datab">
+    <div class="databasetitle"></div>
+    <div class="data">
+        {% for i in data %}
+            <div class="alert alert-danger">
+                <div class="title">{{ i.title }}</div>
+                <div class="description">{{ i.description }}</div>
+                <div class="changelog">{{ i.changelog }}</div>
+            </div>
+        {% endfor %}
+    </div>
+    </div>
+{% endblock %}
